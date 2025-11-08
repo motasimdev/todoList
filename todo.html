@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+
+    <!-- ====================================Navbar start========================== -->
+
+    <section>
+        <nav class="py-5 bg-gray-400">
+            <div class="container m-auto">
+                <div class="flex items-center">
+                    <div class="w-[40%]">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dxihqxcjs/image/upload/v1762454390/logo5_modofu.png"
+                                alt="logo" class="w-18">
+                        </a>
+                    </div>
+                    <div class="">
+                        <ul class="flex items-center gap-x-10">
+                            <a href="index.html">
+                                <li class="font-semibold text-md hover:text-white transition-all  duration-300">Home
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="font-semibold text-md hover:text-white transition-all  duration-300">About
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="font-semibold text-md hover:text-white transition-all  duration-300">Blog
+                                </li>
+                            </a>
+                            <a href="todo.html">
+                                <li class="font-semibold text-md hover:text-white transition-all  duration-300">Todo
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ============================Navbar end================================= -->
+
+
+    <!-- ============================Todo Start================================= -->
+
+    <section class="pb-[100px] pt-3">
+        <div class="container m-auto">
+            <div class="bg-gray-500 py-2 rounded-full flex justify-center gap-x-2">
+
+                <input type="text" id="todoInput" placeholder="Add Task"
+                    class="py-4 px-5 bg-white rounded-full w-[600px]">
+
+                <button id="submitBtn" class="py-4 px-6 bg-white rounded-full text-gray-400 cursor-pointer">Add
+                    Task</button>
+            </div>
+            <div class="bg-gray-400 rounded-2xl p-8 mt-5">
+                <div class="bg-white py-1 px-4 rounded-2xl">
+                    <div class="flex items-center justify-between">
+                        <h3 id="todoListItem" class="text-lg font-medium"></h3>
+                        <button class="bg-red-600 py-2 px-5 rounded-2xl cursor-pointer">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================Todo End================================= -->
+
+
+    <!-- ============================Footer Part Start================================= -->
+
+    <section>
+        <Footer class="py-5 bg-gray-400">
+            <div class="container m-auto">
+                <div class=" text-gray-100 pt-10 pb-6 mt-10">
+                    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                        <div>
+                            <h2 class="text-white text-xl font-semibold mb-3">
+                                Todo
+                            </h2>
+                            <p class="text-sm leading-relaxed">
+                                Working together to make a positive impact in our community
+                                through honesty, integrity, and service.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h3 class="text-white font-semibold mb-3">Quick Links</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li>
+                                    <a href="" class="hover:text-white duration-300">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-white duration-300">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-white duration-300">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-white duration-300">
+                                        Todo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div>
+                            <h3 class="text-white font-semibold mb-3">Contact Info</h3>
+                            <ul class="text-sm space-y-2">
+                                <li>📍 Demra, Dhaka, Bangladesh</li>
+                                <li>📧 info@barakahtrust.org</li>
+                                <li>📞 +880 1234-567890</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-500">
+                        © {new Date().getFullYear()}{" "}
+                        <span class="font-medium text-gray-300">MOTASIM</span>.
+                        All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </Footer>
+    </section>
+
+    <!-- ============================Footer Part End================================= -->
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
