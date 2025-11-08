@@ -8,7 +8,7 @@ submitBtn.addEventListener("click", () => {
   //   =============li create========
   const li = document.createElement("li");
   li.textContent = inputVal;
-  li.className = "text-lg font-medium bg-white py-1 px-4 rounded-2xl flex items-center justify-between";
+  li.className = "text-lg font-medium bg-white py-1 px-4 rounded-2xl flex items-center justify-between mb-2";
   //   =============li create========
   todoListItem.appendChild(li);
 
