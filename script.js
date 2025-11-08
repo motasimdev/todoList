@@ -11,7 +11,12 @@ todoInput.addEventListener("keypress", (e) => {
 });
 
 function addTodo() {
-  const inputVal = todoInput.value;
+  const inputVal = todoInput.value.trim();
+
+  if (!inputVal) {
+    alert("vai khali ken?");
+    return;
+  }
 
   //   =============li create========
   const li = document.createElement("li");
@@ -29,12 +34,7 @@ function addTodo() {
     li.remove();
   });
   //   =============delete btn create========
-
   li.appendChild(delBtn);
 
   todoInput.value = "";
-
-  if (!inputVal) {
-    alert("vai khali ken?");
-  }
 }
